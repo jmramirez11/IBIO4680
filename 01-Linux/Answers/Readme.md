@@ -14,4 +14,4 @@
 #usar para correr el resto del codigo. Lo que le sigue al #! es la direccion en la 
 #cual se encuentra dicho interprete. Entonces, en nuestro caso, bash es el 
 #interprete a utilizar para correr el codigo y /bin/bash es la direccion para llegar
-#a el.
+#a el. 
