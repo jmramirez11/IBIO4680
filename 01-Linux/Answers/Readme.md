@@ -28,4 +28,7 @@
 #macion del usuario, nos interesaria ver que sucede al ejecutar este comando. Este se
 #ejecuta de la forma: "less /etc/passwd", el comando less hace que la informacion de
 #un archivo de texto se muestre, no completo, sino una pagina a la vez [7]. AL ejecu-
-#tar esta linea de comando se obtiene lo siguiente:
+#tar esta linea de comando se obtienen varias lineas (una por usuario), asi:
+			#root:x:0:0:root:/root:/bin/bash
+#Alli se pueden observar los 7 atributos. 
+#Sin embargo, 
