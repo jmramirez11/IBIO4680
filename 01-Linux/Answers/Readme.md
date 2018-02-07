@@ -31,4 +31,21 @@
 #tar esta linea de comando se obtienen varias lineas (una por usuario), asi:
 			#root:x:0:0:root:/root:/bin/bash
 #Alli se pueden observar los 7 atributos. 
-#Sin embargo, 
+
+#De esta forma, hay varias maneras para contar cuantos usuarios hay locales hay. Una
+#seria agregandole al comando anterior un "wc -l" que lo que va a hacer es contar el 
+#numero de lineas que se encontraron en el comando anterior (cut). Asi pues, ejecu-
+#tando "less /etc/passwd | wc /l" nos da el resultado de 42. 
+
+#Otra manera seria primero, de cada linea de usuario, extraer unicamente el nombre
+#de dicho usuario y luego contar dichas palabras (-w) o lineas (-l). En ambos casos se 
+#obtuvo el mismo resultado [8].
+ 
+#Aun otra manera seria "wc -l < /etc/passwd", esto significa que cuente las lineas
+#dentro del archivo passwd que dijimos que contine los atributos de los usuarios [9].
+
+
+
+#PUNTO 4:
+
+
