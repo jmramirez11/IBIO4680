@@ -47,5 +47,24 @@
 
 
 #PUNTO 4:
+#Se utiliza la funcion "cut" y se especifica los lugares de corte con "-d ':'". Luego, 
+#al usuario le corresponde el field 1 (f1) y al shell el field 7 (f7), por lo que al 
+#ordenar se usa "sort" y se especifica el campo con el comando "-k7", que corresponde
+# a organizar a partir de lla columna 7, que es la del shell.[9]
+
+#El codigo implementado fue el siguiente:
+#grep "/bin/bash" /etc/passwd | cut -d':' -f1-7 | sort | grep "/bin/bash" /etc/passwd | cut -d':' -f1-7 | sort -k7 | uniq
+
+#PUNTO 5
 
 
+#PUNTO 6
+#se utiliza wgte para obtener archivo de internet, se especifica "-c" para que el archivo
+# continue la descarga si se ha interrumpido por alguna razon.[11]
+
+# El codigo implementado fue el siguiente:
+# wget -c imbords "http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz"
+
+#REFERENCIAS
+#[9] https://www.thegeekstuff.com/2013/06/cut-command-examples
+#[11] https://askubuntu.com/questions/207265/how-to-download-a-file-from-a-website-via-terminal
