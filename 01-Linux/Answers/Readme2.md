@@ -1,3 +1,10 @@
+#Punto 5
+#A partir del comando “find BSR/ -type f | wc -l” el cual nos permite saber cuantas imágenes hay en BSR, le agregamos comando hasta llegar a lo deseado. Para esto, se debe saber que existe un comando llamado “md5sum”, el cual proporciona una checksum o hash que sirve para identificar correctamente un archivo. Este permite detectar si dicho archivo sufrio cambios da;inos y si es autentico o no. Lo m[as importante es que el hash es un valor que es prácticamente único para cada archivo y por lo tanto lo podemos usar como “identificador” de cada imagen. 
+#Sabiendo esto, se construye el comando final:
+#$ find BSR/  -type f -exec md5sum '{}' ';' | sort | uniq --all-repeated=separate -w 15 
+#En donde, “-exec md5sum '{}' ';'” nos permite extraer el hash de cada imagen dentro de BSR. Sort nos permite ordenar dichas líneas de hash. Uniq nos permite reportar o filtrar líneas repetidas en un archivo: entonces, el parámetro –all-repeated representa que imprima todas las líneas duplicadas y el parámetro separate signfiica que inserte un espacio en blanco entre cada set de líneas suplicadas. 
+#Asi pues, al correr este comando se obtiene una lista, separada por espacios en blancos, en donde se observan los hash de las imágenes duplicadas. Finalmente, le agregamos un | wc –l para que nos diga cuantas líneas hay (las duplicadas seras ese numero dividido entre 2 puesto que imprime ambas copias de cada imagen).
+
 #PUNTO 7
 #Inicialmente, antes de descomprimir, se utiliza el comando gzip para ver
 # el peso de los archivos comprimidos y descomprimidos, que es de 70763455 bits 
