@@ -3,7 +3,7 @@ import glob
 import os
 import tarfile
 import urllib.request
-cur_path=os.path.dirname(os.path.abspath('lab_3.py'))
+cur_path=os.path.dirname(os.path.abspath('labb3.py'))
 bool_untar=os.path.isdir('BSR')
 bool_tar=os.path.isfile('BSR_bsds500.tgz')
 if ( bool_tar==True and bool_untar==False ):
