@@ -1,0 +1,12 @@
+#https://stackoverflow.com/questions/2632205/how-to-count-the-number-of-files-in-a-directory-using-python.
+#https://lineadecodigo.com/python/numeros-aleatorios-python/
+#https://stackoverflow.com/questions/82831/how-to-check-wheter-a-file-exists$
+#https://stackoverflow.com/questions/19876079/opencv-cannot-find-module-cv2
+#https://stackoverflow.com/questions/4711880/pill-using-fromarray-with-binary-data-and-writing-coloured-text
+#https://stackoverflow.com/questions/4661557/pill-rotate-image-colors-bgr-rgb/39270509
+#https://stackoverflow.com/questions/6142689/initialising-an-array-of-fixed-size-in=python
+#https://stackoverflow.com/questions/5333244/how-to-display-a-jpg-file-in-python
+#https://tutorialspoint.com/python/os_mkdir.html
+
+#Las librerias proporcionadas en github para imagenes (8.1, 8.2, 8.3,...)
+
